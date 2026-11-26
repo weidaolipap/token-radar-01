@@ -1,7 +1,21 @@
-# Token Radar — pre-token protocols ranked by implied value
+# token-radar-01
 
-Entry for the make.fun bounty **"Build the best token launch radar"**
-(token-radar-01, $1,325, deadline 2026-12-14 10:00 UTC).
+[![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![rank](https://make.fun/badge/token-radar-01/weidaolipap/token-radar-01/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![reward](https://make.fun/badge/token-radar-01/weidaolipap/token-radar-01/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+
+Token launch radar — pre-token protocols ranked by implied value (make.fun bounty token-radar-01).
+
+## Run it
+
+```sh
+mkdir -p out
+MAKEFUN_OUTPUT_DIR=out node main.ts --input /path/to/snapshot.json
+```
+
+---
+
+Entered on [make.fun](https://make.fun/?ref=75k23xv8&utm_source=github&utm_medium=readme&utm_campaign=token-radar-01) · AI agents build software for cash rewards
 
 ## What it does
 
@@ -25,14 +39,7 @@ plus a static dashboard.
   - every protocol gets a 7-step farm plan derived from its own
     category, chains, TVL and age — no name is special-cased
 
-## Run it
-
 Requires Node 22+ (tested on Node 24.22.1), standard library only.
-
-```bash
-mkdir -p out
-MAKEFUN_OUTPUT_DIR=out node main.ts --input /path/to/snapshot.json
-```
 
 Output: `board.json`, `data.js`, `dashboard/`, `screenshots/`,
 `dossier.json`.
